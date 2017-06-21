@@ -186,35 +186,19 @@ border-left: 3px solid  #4997D0;
 /*END SHADOW*/
 
 /*SHOCK ANIMATION*/
-.mouth, .sight, .iris {
-  animation-name: bounce;
+.mouth, .sight, .iris, .left_hand, .right_hand {
   animation-duration: 3.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 
-.sight {
-  animation-name: gobsmacked;
-}
+.mouth, .sight, .iris { animation-name: stretch;}
+.sight {animation-name: gobsmacked;}
+.iris {animation-name: irisshocked;}
+.left_hand {animation-name: slapleft;}
+.right_hand {animation-name: slapright;}
 
-.iris {
-  animation-name: irisshocked;
-}
-
-.right_hand {
-  animation-name: slapright;
-  animation-duration: 3.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-.left_hand {
-  animation-name: slapleft;
-  animation-duration: 3.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes bounce {
+@keyframes stretch {
   0%, 100% {transform: scale(1, 1);}
   5% {transform: scale(1.05, 1.05);}
 }
@@ -231,13 +215,13 @@ border-left: 3px solid  #4997D0;
 }
 
 @keyframes slapright {
-  from {transform: translate(0px, 0px);}
-  to {transform: translate(-5px, -10px);}
+  0% {transform: translate(0px, 0px);}
+  100% {transform: translate(-5px, -10px);}
 }
 
 @keyframes slapleft {
-  from {transform: translate(50px, 100px);}
-  to {transform: translate(-50px, -100px);}
+  0% {transform: translate(50px, 100px);}
+  100% {transform: translate(-50px, -100px);}
 }
 
 /*END SHOCK ANIMATION*/
