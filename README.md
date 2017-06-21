@@ -1,2 +1,2 @@
 # Emojionation
-![Sample Navasca](https://arianzargaran.github.io/Emojination/preview/firstpreview.png)
+![Awesome Emoji preview](https://arianzargaran.github.io/Emojination/preview/firstpreview.png)
