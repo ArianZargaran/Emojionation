@@ -6,7 +6,32 @@
 }
 
 html {
-  padding-top: 300px;
+  padding-top: 200px;
+  background-image: url(../stylings/background/pattern.png);
+  background-repeat:repeat;
+}
+
+.hair {
+  position: relative;
+  bottom: 270px;
+}
+
+#long_hair {
+border-right: 3px solid  #4997D0;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -7px;
+  left: 65px;
+}
+
+#short_hair {
+border-left: 3px solid  #4997D0;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 155px;
+  top: 3px;
 }
 
 #face {
@@ -93,24 +118,126 @@ html {
   transform: skewX(-3deg);
 }
 
+#tongue {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-top: 22px solid #f36197;
+  bottom: -30px;
+}
+
+#tooth {
+  position: absolute;
+  height: 20px;
+  width: 25px;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  background-color: #fcfce7;
+  bottom: 73px;
+  left: 12px;
+}
+
 #lips {
   position: relative;
   box-sizing: content-box;
-  bottom: 89px;
-  right: 27px;
+  top: -25px;
+  right: 39px;
   height: 62px;
   width: 47px;
   border: 27px solid #4997D0;
 }
 
-#tongue {
+.hands {
+  width: 51px;
+  height: 51px;
+  position: relative;
+}
+
+.left_hand {
   position: absolute;
-  height: 50px;
-  width: 50px;
-  border-top: 20px solid #f36197;
-  bottom: -30px;
+  background-color: #4997D0;
+  width: 51px;
+  height: 51px;
+  top: 10px;
 }
 
-#tooth {
-
+.right_hand {
+  position: absolute;
+  background-color: #4997D0;
+    left: 250px;
+    width: 51px;
+    height: 51px;
 }
+
+/*SHADOW*/
+.shadow::after {
+  z-index: -1;
+  position: absolute;
+  background-color: transparent;
+  content: "";
+  height: 10px;
+  width: 300px;
+  border-radius: 100%;
+  box-shadow: 0 70px 30px #b9b9b9;
+  top: 500px;
+}
+/*END SHADOW*/
+
+/*SHOCK ANIMATION*/
+.mouth, .sight, .iris {
+  animation-name: bounce;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.sight {
+  animation-name: gobsmacked;
+}
+
+.iris {
+  animation-name: irisshocked;
+}
+
+.right_hand {
+  animation-name: slapright;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.left_hand {
+  animation-name: slapleft;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% {transform: scale(1, 1);}
+  5% {transform: scale(1.05, 1.05);}
+}
+
+@keyframes gobsmacked {
+  0%, 100% {border-width: 10px 2px 2px 2px;}
+  5% {border-width: 0px 0px 0px 0px;}
+}
+
+@keyframes irisshocked {
+  0%, 100% {transform: scale(1,1);}
+  5% {transform: scale(.6,.6);
+  50% {transform: scale(.6,.6);}
+}
+
+@keyframes slapright {
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(-5px, -10px);}
+}
+
+@keyframes slapleft {
+  from {transform: translate(50px, 100px);}
+  to {transform: translate(-50px, -100px);}
+}
+
+/*END SHOCK ANIMATION*/
