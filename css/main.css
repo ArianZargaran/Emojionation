@@ -160,15 +160,16 @@ border-left: 3px solid  #4997D0;
   background-color: #4997D0;
   width: 51px;
   height: 51px;
-  top: 10px;
+  top: 1px;
+  transform: rotate(180deg);
 }
 
 .right_hand {
   position: absolute;
   background-color: #4997D0;
-    left: 250px;
-    width: 51px;
-    height: 51px;
+  left: 250px;
+  width: 51px;
+  height: 51px;
 }
 
 /*SHADOW*/
@@ -192,7 +193,7 @@ border-left: 3px solid  #4997D0;
   animation-timing-function: ease-in-out;
 }
 
-.mouth, .sight, .iris { animation-name: stretch;}
+.mouth, {animation-name: stretch;}
 .sight {animation-name: gobsmacked;}
 .iris {animation-name: irisshocked;}
 .left_hand {animation-name: slapleft;}
@@ -210,18 +211,17 @@ border-left: 3px solid  #4997D0;
 
 @keyframes irisshocked {
   0%, 100% {transform: scale(1,1);}
-  5% {transform: scale(.6,.6);
+  5% {transform: scale(.6,.6);}
   50% {transform: scale(.6,.6);}
 }
 
 @keyframes slapright {
-  0% {transform: translate(0px, 0px);}
-  100% {transform: translate(-5px, -10px);}
+  0%, 100% {transform: translate(0px, 0px); box-shadow: inset 0px 0px 1px 0px white;}
+  5% {transform: translate(20px, 18px); box-shadow: inset 0px 0px 1px 0px white;}
 }
 
 @keyframes slapleft {
-  0% {transform: translate(50px, 100px);}
-  100% {transform: translate(-50px, -100px);}
+  0%, 100% {transform: translate(0px, 0px); box-shadow: inset 0px 0px 1px 0px white;}
+  5% {transform: translate(35px, -65px);box-shadow: inset 0px 0px 1px 0px white;}
 }
-
 /*END SHOCK ANIMATION*/
