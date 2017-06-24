@@ -225,3 +225,28 @@ border-left: 3px solid  #4997D0;
   5% {transform: translate(35px, -65px);box-shadow: inset 0px 0px 1px 0px white;}
 }
 /*END SHOCK ANIMATION*/
+
+/*FRECKLES*/
+#face::before {
+   content: "";
+   width: 4px;
+   height: 4px;
+   border-radius: 100%;
+   background-color: transparent;
+   box-shadow:
+    70px 100px 0 #007ac1,
+    85px 118px 0 #007ac1,
+    97px 105px 0 #007ac1,
+    102px 120px 0 #007ac1,
+    116px 111px 0 #007ac1,
+    130px 90px 0 #007ac1,
+
+    165px 100px 0 #007ac1,
+    182px 105px 0 #007ac1,
+    204px 118px 0 #007ac1,
+    217px 101px 0 #007ac1,
+    232px 110px 0 #007ac1;
+   z-index: 1;
+   position: absolute;
+ }
+/*END FRECKLES*/
