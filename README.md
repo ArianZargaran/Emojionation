@@ -3,6 +3,6 @@
 <br>
 https://arianzargaran.github.io/Emojionation/
 <br>
-JUST: Freckles added
+JUST: Mouth fixed
 <br>
 NEXT: Spiky hair
