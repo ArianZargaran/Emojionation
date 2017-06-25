@@ -193,7 +193,7 @@ border-left: 3px solid  #4997D0;
   animation-timing-function: ease-in-out;
 }
 
-.mouth, {animation-name: stretch;}
+.mouth {animation-name: stretch;}
 .sight {animation-name: gobsmacked;}
 .iris {animation-name: irisshocked;}
 .left_hand {animation-name: slapleft;}
